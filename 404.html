@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<script>
+(function(){
+  var path = window.location.pathname.split("/").pop();
+  if(path && !isNaN(path)){
+     var target = "https://script.google.com/macros/s/AKfycbyrVpHQCPg5wFS1zM3xyInDhcgvTqV8EYPcc18Z1MCkHEBVIF8ruJ-UK0MjO9lgCK8/exec?job="+path;
+     window.location.replace(target);
+  } else {
+     document.write("Invalid job number");
+  }
+})();
+</script>
+</head><body></body></html>
